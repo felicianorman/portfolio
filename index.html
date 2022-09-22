@@ -17,45 +17,61 @@
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="container-fluid">
+        <section class="row">
+        <nav class="col-12">
             <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#Hem">Hem</a></li>
+                <li><a href="#om-mig">Om mig</a></li>
+                <li><a href="#github">Mina projekt</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
             </ul>
         </nav>
+    </section>
 
         <!-- Header del om mig-->
-        <section>
-            <h1>Felicia Norman</h1>
-            <h3>Text om mig</h3>
+        <section id="Hem" class="row">
+            <article class="header col-12">
+                <h1>Felicia Norman</h1>
+                <h3>Text om mig</h3>
+            </article>
         </section>
     </header>
 
-    <main>
-        <section>
+    <main class="container-fluid">
+        <section id="om-mig" class="aboutme row">
             <!-- Om mig + Skills-->
-            <article><h2>Om mig</h2></article>
-            <article><h2>Skills</h2></article>
+            <article class="col-6"><h2>Om mig</h2></article>
+            <article class="col-6"><h2>Skills</h2></article>
         </section>
 
         <!--Projekt Github-->
-        <section>
-            <article><h2>Mina projekt</h2></article>
+        <section id="github" class="row github">
+            <article class="col-12"><h2>Mina projekt</h2></article>
             
         </section>
 
         <!-- Formulär Kontakt-->
-        <section>
-            <form></form>
+        <section id="kontakt" class="row contact">
+            <article class="col-12">
+                <form>
+                    <p>Blabla</p>
+                </form>
+        </article>
         </section>
 
 
     </main>
 
     <!-- Länkar till Github, Linkedin osv-->
-    <footer></footer>
+    <footer class="container-fluid">
+        <section class="row">
+            <article class="col-12">
+                <p>Footer</p>
+            </article>
+        </section>
+        </footer>
+        
     
 </body>
 </html>

@@ -1,0 +1,17 @@
+header { 
+    border: 1px solid black;
+}
+
+nav, .contact, .aboutme {
+    background-color: #F1E9DA;
+}
+
+li, a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.header, .github, footer {
+    background-color: blueviolet;
+}
