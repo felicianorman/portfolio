@@ -3,13 +3,37 @@ nav, .contact, .aboutme, footer {
     background-color: #f3efea;
 }
 
-.home, .project {
-    background-color: rgb(164, 100, 224);
+.home, .aboutme, .project {
+    height: 100vh;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Roboto', sans-serif;
-    ;
+    font-weight: bold;
+}
+
+/* Animation */
+.bottom-text {
+    animation: hoppa 4s;
+    color: rgb(235, 200, 238);
+}
+
+
+@keyframes hoppa {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    50% { 
+        transform: scale(1,1);
+        opacity: 1;
+    }
+
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 nav {
@@ -19,6 +43,14 @@ nav {
 
 li {
     list-style-type: none;
+}
+
+span {
+    font-weight: bold;
+}
+
+.skills {
+    list-style-type: circle;
 }
 
 a {
@@ -35,16 +67,42 @@ a:hover {
     color: black;
 }
 
-
-
-img {
-    width: 50%;
-    border-radius: 50%;
-    border: 2px solid white;
+.home {
+    background-color: blueviolet;
+    position: relative;
 }
 
-.home, .aboutme, .project {
-    height: 100vh;
+.header-text {
+   position: absolute;
+   text-align: center;
+   top: 40%;
+}
+
+.aboutme {
+    position: relative;
+}
+
+.aboutme-text {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+}
+
+.img-container, img {
+    position: absolute;
+    width: 60%;
+    border-radius: 50%;
+    top: 25%;
+    left: 35%;
+}
+
+img {
+    border: 1px solid white;
+}
+
+
+.project {
+    background-color: rgb(164, 100, 224);
 }
 
 
@@ -61,5 +119,11 @@ img {
 
     .home, .aboutme {
         height: 80vh;
+    }
+
+    .img-container, img {
+        width: 50%;
+        top: 15%;
+        left: 40%;
     }
 }

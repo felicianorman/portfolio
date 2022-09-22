@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -31,38 +32,40 @@
             </ul>
     </nav>
 </header>
+
 <main class="container-fluid">
         <!-- Header del om mig-->
         <section id="Home" class="home row">
-            <h1>Felicia Norman</h1>
-            <article class="col-12 ">
-                <h3>Frontend Developer</h3>
+            <article class="col-12 header-text">
+                <h1>FELICIA NORMAN</h1>
+                <h3 class="bottom-text">FRONTEND DEVELOPER</h3>
             </article>
         </section>
 
-        <!-- Om mig + Skills-->
+        <!-- Om mig -->
         <section id="aboutme" class="aboutme row">
+            <article class="col-12 col-md-6 aboutme-text">
             <h2>Om mig</h2>
-            <article class="col-12 col-md-6">
-
-            <p>Jag heter Felicia och är en Frontend Developer student på Medieinstitutet</p>
-
-            <img src="assets/cvbild.JPG" alt="bild på felicia">
-
-            </article>
-            <article class="col-12 col-md-6"><h2>Skills</h2>
+            <p>Jag heter Felicia och studerar Frontend Developer på Medieinstitutet.</p>
+            <p>Programmering är en av mina hobbies, som jag kan sitta och gräva ner mig i flera timmar på fritiden</p>
+            <span>Färdigheter</span>
             <ul>
-                <li>HTML & CSS</li>
+                <li class="skills">HTML & CSS (Bootstrap, SASS)</li>
             </ul>
+            </article>
 
-        </article>
+            <article class="col-12 col-md-6">
+                <div class="img-container">
+                    <img src="assets/cvbild.JPG" alt="bild på felicia">
+                </div>
+                
+            </article>
         </section>
 
         <!--Projekt Github-->
         <section id="project" class="row project">
-            <h2>Mina projekt</h2>
-
             <article class="col-12">
+            <h2>Mina projekt</h2>
             <p>
                 Här ska det ligga Github Projekt med länkar till dem
             </p></article>
@@ -72,8 +75,12 @@
     </main>
 
     <!-- Länkar till Github, Linkedin osv-->
-    <footer>
-        <p>Footer</p>
+    <footer class="container-fluid">
+        <section class="row">
+            <article class="col-12">
+                <p>Footer</p>
+            </article>
+        </section>
     </footer>
 
 </body>
