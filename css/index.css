@@ -7,6 +7,10 @@ nav, .contact, .aboutme, footer {
     height: 100vh;
 }
 
+h1 {
+    color: white;
+}
+
 h1, h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -47,7 +51,7 @@ li {
     list-style-type: none;
 }
 
-a {
+.nav-link {
     text-decoration: none;
     text-align: center;
     color: black;
@@ -56,7 +60,7 @@ a {
 
 }
 
-a:hover {
+.nav-link:hover {
     border-bottom: 1px solid brown;
     color: black;
 }
@@ -86,9 +90,6 @@ a:hover {
     top: 20%;
 }
 
-span {
-    font-weight: bold;
-}
 
 .skills {
     list-style-type: circle;
@@ -106,14 +107,36 @@ img {
     border: 1px solid white;
 }
 
+/* Projekt */
 
 .project {
     background-color: rgb(164, 100, 224);
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    height: 15vh;
+}
+
+.bi {
+    font-size: 45px;
+    padding: 5px;
+    color: rgb(83, 70, 94);
+}
+
+.bi:hover {
+    color: rgb(112, 96, 126);
+
 }
 
 
 @media screen and (min-width: 768px) {
-    ul { 
+    .nav-ul { 
         display: flex;
         margin: 15px;
         gap: 10px;
@@ -131,5 +154,9 @@ img {
         width: 50%;
         top: 15%;
         left: 40%;
+    }
+
+    footer {
+        height: 20vh;
     }
 }
