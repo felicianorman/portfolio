@@ -36,6 +36,8 @@ h1, h2 {
     }
 }
 
+/* Header och Navigering */
+
 nav {
     display: flex;
     justify-content: center;
@@ -43,14 +45,6 @@ nav {
 
 li {
     list-style-type: none;
-}
-
-span {
-    font-weight: bold;
-}
-
-.skills {
-    list-style-type: circle;
 }
 
 a {
@@ -67,6 +61,7 @@ a:hover {
     color: black;
 }
 
+
 .home {
     background-color: blueviolet;
     position: relative;
@@ -78,14 +73,25 @@ a:hover {
    top: 40%;
 }
 
+/* Om mig  */
+
 .aboutme {
     position: relative;
 }
 
 .aboutme-text {
     position: absolute;
+    padding-left: 20px;
     width: 50%;
     top: 20%;
+}
+
+span {
+    font-weight: bold;
+}
+
+.skills {
+    list-style-type: circle;
 }
 
 .img-container, img {
