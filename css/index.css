@@ -1,10 +1,10 @@
 
-nav, .contact, .aboutme {
+nav, .contact, .aboutme, footer {
     background-color: #f3efea;
 }
 
-.container-fluid {
-    height: 100vh;
+.home, .project {
+    background-color: rgb(164, 100, 224);
 }
 
 nav {
@@ -30,11 +30,20 @@ a:hover {
     color: black;
 }
 
-.home, .project, footer {
-    background-color: rgb(164, 100, 224);
+
+
+img {
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 
-@media screen and (min-width: 968px) {
+.home, .aboutme, .project {
+    height: 100vh;
+}
+
+
+@media screen and (min-width: 768px) {
     ul { 
         display: flex;
         margin: 15px;
@@ -45,7 +54,7 @@ a:hover {
         justify-content: flex-end;
     }
 
-    .home {
-        height: 50vh;
+    .home, .aboutme {
+        height: 80vh;
     }
 }
