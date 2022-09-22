@@ -1,6 +1,10 @@
 
-nav, .contact, .aboutme, footer {
+.contact, .aboutme {
     background-color: #f3efea;
+}
+
+nav, footer {
+    background-color: #e7e3de;
 }
 
 .home, .aboutme, .project {
@@ -48,7 +52,6 @@ nav {
     width: 100%;
     position: fixed;
     z-index: 1;
-
 }
 
 li {
@@ -119,12 +122,54 @@ img {
     padding-top: 20px;
 }
 
+/* Formulär */
+input {
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px lightgray solid;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    height: 50vh;
+    align-items: center;
+    background-color: #f3efea;
+}
+
+textarea {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px lightgray solid;
+    width: 80%;
+}
+
+.button {
+   justify-content: center;
+   padding: 10px;
+}
+
+button {
+    border-radius: 5px;
+    background-color: rgb(83, 70, 94);
+    color: white;
+    border: none;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(112, 96, 126);
+}
+
 /* Footer */
 
 footer {
     display: flex;
     justify-content: flex-end;
-    height: 15vh;
+    height: 10vh;
 }
 
 .bi {
@@ -154,13 +199,25 @@ footer {
         height: 80vh;
     }
 
+    .aboutme-text {
+        width: 40vw;
+        padding-left: 5%;
+    }
     .img-container, img {
-        width: 45%;
-        top: 15%;
+        width: 44%;
+        top: 20%;
         left: 40%;
     }
 
+    button {
+        padding: 10px;
+    }
+
+    textarea {
+        width: 50%;
+    }
+
     footer {
-        height: 20vh;
+        height: 15vh;
     }
 }
