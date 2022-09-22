@@ -7,6 +7,11 @@ nav, .contact, .aboutme, footer {
     background-color: rgb(164, 100, 224);
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+    ;
+}
+
 nav {
     display: flex;
     justify-content: center;
