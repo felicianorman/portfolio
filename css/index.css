@@ -1,17 +1,51 @@
-header { 
-    border: 1px solid black;
-}
 
 nav, .contact, .aboutme {
-    background-color: #F1E9DA;
+    background-color: #f3efea;
 }
 
-li, a {
-    text-decoration: none;
+.container-fluid {
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+li {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border-bottom: none;
+    transition: border-bottom 1s linear;
+
+}
+
+a:hover {
+    border-bottom: 1px solid brown;
     color: black;
 }
 
-.header, .github, footer {
-    background-color: blueviolet;
+.home, .project, footer {
+    background-color: rgb(164, 100, 224);
+}
+
+@media screen and (min-width: 968px) {
+    ul { 
+        display: flex;
+        margin: 15px;
+        gap: 10px;
+    }
+    
+    nav {
+        justify-content: flex-end;
+    }
+
+    .home {
+        height: 50vh;
+    }
 }
